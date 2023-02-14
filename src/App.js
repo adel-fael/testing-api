@@ -70,7 +70,7 @@ function App() {
     };
 
     try {
-      const res = await apiClient.post("/client/register", postData);
+      const res = await apiClient.post("/client/create", postData);
 
       const result = {
         status: res.status + "-" + res.statusText,
